@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AboutMe {
     public static void main(String[] args) {
+        // try para tratar exceções
         try{
         //criando um objeto scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
@@ -27,6 +28,7 @@ public class AboutMe {
         System.out.println("Minha altura é " + altura + " CM ");
         scanner.close();
         }
+        //catch para mostrar o erro gerado caso não seja inserido um inteiro nas variaveis idade e altura
         catch(InputMismatchException e){
             System.out.println("Os campos idade e altura precisão ser numericos");
         }
